@@ -3,7 +3,7 @@ import ServicesCard from "../ui/ServiceCard";
 
 export default function Services() {
   return (
-    <section id="services" className="w-full h-full bg-brand">
+    <section id="services" className="w-full h-full mt-8 sm:mt-32 bg-brand">
       <div className="max-w-[1440px] text-light mx-auto py-8 sm:py-20 px-4 sm:px-5">
         <div className="w-full flex flex-col gap-10 lg:gap-20">
           <div className="flex flex-col-reverse md:flex-row-reverse justify-between items-start">

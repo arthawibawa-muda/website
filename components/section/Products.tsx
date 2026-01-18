@@ -28,9 +28,9 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="w-full max-w-[1440px] mx-auto py-8 sm:py-20 px-4 sm:px-5 bg-light"
+      className="w-full max-w-[1440px] mx-auto px-4 sm:px-5 bg-light"
     >
-      <div className="w-full flex flex-col gap-10 lg:gap-20">
+      <div className="w-full mt-8 sm:mt-[120px] flex flex-col gap-10 lg:gap-20">
         <div className="flex flex-col justify-center items-center gap-5">
           <p>PRODUK KAMI</p>
           <h3 className="max-w-3xl text-xl sm:text-3xl lg:text-5xl text-center font-semibold">

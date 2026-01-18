@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function SocialProof() {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-5 py-8 sm:py-10 px-4 sm:px-5">
+    <section className="w-full flex flex-col items-center justify-center gap-5 pt-8 sm:pt-16 px-4 sm:px-5">
       <p className="text-dark">TELAH BEKERJASAMA DENGAN</p>
       <ul
         role="list"
