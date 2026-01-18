@@ -1,3 +1,4 @@
+import { Footer } from "@/components/ui/Footer";
 import { Header } from "@/components/ui/Header";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${googleSans.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -20,8 +20,14 @@ export default function Hero() {
             kepastian.
           </p>
           <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5">
-            <Button url="/">MULAI KERJASAMA</Button>
-            <Button url="/" variant="secondary">
+            <Button url="https://wa.link/wboize" target="_blank">
+              MULAI KERJASAMA
+            </Button>
+            <Button
+              url="https://wa.link/wboize"
+              target="_blank"
+              variant="secondary"
+            >
               KONSULTASI GRATIS
             </Button>
           </div>

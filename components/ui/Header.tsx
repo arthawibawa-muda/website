@@ -80,7 +80,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 py-6 font-sans">
+    <header className="fixed left-0 right-0 top-0 z-50 py-2 sm:py-6 font-sans">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 text-dark">
         <nav className="relative flex justify-between rounded-full bg-light/80 px-4 py-2 shadow-lg backdrop-blur-md ring-1 ring-slate-900/5">
           <div className="flex items-center md:gap-x-12">
@@ -95,7 +95,9 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button url="/">KONTAK KAMI</Button>
+            <Button url="https://wa.link/wboize" target="_blank">
+              KONTAK KAMI
+            </Button>
             <div className="-mr-1 lg:hidden">
               <MobileNavigation />
             </div>

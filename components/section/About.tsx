@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 export default function About() {
   return (
     <section id="about" className="max-w-[1440px] mx-auto px-4 sm:px-5">
-      <div className="w-full mt-8 sm:mt-[120px] flex flex-col gap-5 lg:gap-8">
+      <div className="w-full mt-16 sm:mt-[120px] flex flex-col gap-5 lg:gap-8">
         <div className="flex flex-col-reverse md:flex-row justify-between items-start">
           <h3 className="text-xl sm:text-3xl lg:text-5xl font-semibold">
             MELAYANI DENGAN INTEGRITAS, <br /> BEKERJA DENGAN KUALITAS
@@ -59,7 +59,11 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <Button url="/" className="w-fit">
+              <Button
+                url="https://wa.link/wboize"
+                target="_blank"
+                className="w-fit"
+              >
                 HUBUNGI KAMI SEKARANG
               </Button>
             </div>
