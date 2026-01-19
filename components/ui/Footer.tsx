@@ -4,13 +4,13 @@ import { NavLink } from "./NavLink";
 
 export function Footer() {
   return (
-    <footer className="max-w-[1440px] mx-auto bg-light font-sans">
-      <div className="py-16">
+    <footer className="max-w-[1440px] mx-auto mx-auto px-4 sm:px-5 bg-light font-sans">
+      <div className="py-4 sm:py-16">
         <nav className="mt-10 space-y-10" aria-label="quick links">
-          <h3 className="text-center text-xl sm:text-3xl lg:text-5xl font-semibold">
+          <h3 className="sm:text-center text-xl sm:text-3xl lg:text-5xl font-semibold">
             ARTHAWIBAWA MUDA
           </h3>
-          <div className="-my-1 flex justify-center gap-x-6">
+          <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6">
             <NavLink href="#hero">BERANDA</NavLink>
             <NavLink href="#about">TENTANG</NavLink>
             <NavLink href="#services">LAYANAN KAMI</NavLink>
@@ -18,7 +18,7 @@ export function Footer() {
           </div>
         </nav>
       </div>
-      <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
+      <div className="flex flex-col sm:items-center border-t border-slate-400/10 py-4 sm:py-10 sm:flex-row-reverse sm:justify-between">
         <div className="flex gap-x-6">
           <Link
             href="mailto:cvarthawibawamuda@gmail.com"
