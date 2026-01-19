@@ -1,41 +1,52 @@
-import { MailIcon, Phone } from "lucide-react";
-import Link from "next/link";
-import { NavLink } from "./NavLink";
+import { FooterLink } from "./FooterLink";
 
 export function Footer() {
   return (
-    <footer className="max-w-[1440px] mx-auto mx-auto px-4 sm:px-5 bg-light font-sans">
-      <div className="py-4 sm:py-16">
-        <nav className="mt-10 space-y-10" aria-label="quick links">
-          <h3 className="sm:text-center text-xl sm:text-3xl lg:text-5xl font-semibold">
-            ARTHAWIBAWA MUDA
-          </h3>
-          <div className="-my-1 flex flex-col sm:flex-row justify-center gap-x-6">
-            <NavLink href="#hero">BERANDA</NavLink>
-            <NavLink href="#about">TENTANG</NavLink>
-            <NavLink href="#services">LAYANAN KAMI</NavLink>
-            <NavLink href="#products">PRODUK KAMI</NavLink>
+    <footer className="max-w-[1440px] mx-auto mx-auto mt-16 sm:mt-32 px-4 sm:px-5 bg-light font-sans">
+      <div className="w-full flex flex-col gap-8">
+        <div className="w-full grid grid-cols-12 gap-5">
+          <div className="col-span-12 md:col-span-5 lg:col-span-4 flex flex-col gap-2 md:gap-5">
+            <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold">
+              ARTHAWIBAWA MUDA
+            </h2>
+            <h3 className="text-lg sm:text-2xl lg:text-3xl font-semibold uppercase">
+              Solusi Jasa & Pengadaan Barang Terpercaya
+            </h3>
           </div>
-        </nav>
-      </div>
-      <div className="flex flex-col sm:items-center border-t border-slate-400/10 py-4 sm:py-10 sm:flex-row-reverse sm:justify-between">
-        <div className="flex gap-x-6">
-          <Link
-            href="mailto:cvarthawibawamuda@gmail.com"
-            target="_blank"
-            className="group text-dark/60"
-          >
-            <MailIcon />
-          </Link>
-          <Link
-            href="https://wa.link/wboize"
-            target="_blank"
-            className="group text-dark/60"
-          >
-            <Phone />
-          </Link>
+          <div className="col-span-12 md:col-start-7 lg:col-start-9 md:col-span-2 flex flex-col gap-3 md:gap-5">
+            <p>MENU</p>
+            <ul className="flex flex-col gap-2 md:gap-4">
+              <li>
+                <FooterLink href="#hero">BERANDA</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="#about">TENTANG</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="#services">LAYANAN KAMI</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="#products">PRODUK KAMI</FooterLink>
+              </li>
+            </ul>
+          </div>
+          <div className="md:col-start-9 lg:col-start-11 col-span-12 md:col-span-2 flex flex-col gap-3 md:gap-5 h-fit">
+            <p>CONTACT</p>
+            <ul className="flex flex-col gap-2 md:gap-4">
+              <li>
+                <FooterLink href="#about">TENTANG</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="#services">LAYANAN KAMI</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="#products">PRODUK KAMI</FooterLink>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p className="mt-6 text-sm text-dark/80 sm:mt-0">
+        <div className="w-full h-[1px] bg-dark" />
+        <p className="mb-8 text-sm text-dark/80">
           Copyright &copy; {new Date().getFullYear()} ARTHAWIBAWA MUDA. All
           rights reserved.
         </p>
