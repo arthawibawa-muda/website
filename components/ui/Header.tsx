@@ -1,5 +1,6 @@
 "use client";
 
+import { menuItem } from "@/lib/constant";
 import {
   Popover,
   PopoverBackdrop,
@@ -7,6 +8,7 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { NavLink } from "./NavLink";
@@ -69,10 +71,11 @@ function MobileNavigation() {
         transition
         className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-light p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
       >
-        <MobileNavLink href="#hero">BERANDA</MobileNavLink>
-        <MobileNavLink href="#about">TENTANG</MobileNavLink>
-        <MobileNavLink href="#services">LAYANAN KAMI</MobileNavLink>
-        <MobileNavLink href="#products">PRODUK KAMI</MobileNavLink>
+        {menuItem.map((menu) => (
+          <MobileNavLink key={menu.link} href={menu.link}>
+            {menu.text}
+          </MobileNavLink>
+        ))}
       </PopoverPanel>
     </Popover>
   );
@@ -85,13 +88,21 @@ export function Header() {
         <nav className="relative flex justify-between rounded-full bg-light/80 px-4 py-2 shadow-lg backdrop-blur-md ring-1 ring-slate-900/5">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home" className="font-semibold text-xl">
-              AWB
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden">
+                <Image
+                  src="/LOGO.svg"
+                  alt="logo"
+                  className="absolute w-full h-full object-cover"
+                  fill
+                />
+              </div>
             </Link>
             <div className="hidden lg:flex lg:gap-x-6">
-              <NavLink href="#hero">BERANDA</NavLink>
-              <NavLink href="#about">TENTANG</NavLink>
-              <NavLink href="#services">LAYANAN KAMI</NavLink>
-              <NavLink href="#products">PRODUK KAMI</NavLink>
+              {menuItem.map((menu) => (
+                <NavLink key={menu.link} href={menu.link}>
+                  {menu.text}
+                </NavLink>
+              ))}
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
