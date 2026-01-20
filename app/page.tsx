@@ -1,9 +1,11 @@
 import About from "@/components/section/About";
 import CTA from "@/components/section/CTA";
+import { Faqs } from "@/components/section/Faqs";
 import Hero from "@/components/section/Hero";
 import Products from "@/components/section/Products";
 import Services from "@/components/section/Services";
 import SocialProof from "@/components/section/SocialProof";
+import { Testimonials } from "@/components/section/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <About />
       <Services />
       <Products />
+      <Testimonials />
+      <Faqs />
       <CTA />
     </main>
   );
