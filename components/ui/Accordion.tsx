@@ -10,7 +10,7 @@ const Accordion = ({ title, answer }: TAccordionProps) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-2">
+    <div className="py-2 space-y-2">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full text-dark"
